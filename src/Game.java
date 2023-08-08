@@ -4,6 +4,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.Color;
 
 public class Game extends JPanel {
     private boolean running;
@@ -20,7 +21,7 @@ public class Game extends JPanel {
 
     private void initGame() {
         // Initialize game state, such as creating the player object and other necessary objects
-        player = new Player();
+        player = new Player(0,0,Color.RED);
         // Additional initialization logic
     }
 

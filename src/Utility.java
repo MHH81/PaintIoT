@@ -1,5 +1,3 @@
-package example.com;
-
 public class Utility {
     // Prevent instantiation
     private Utility() {
