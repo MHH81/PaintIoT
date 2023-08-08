@@ -1,30 +1,38 @@
-import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.*;
 
 public class Player {
     private int x;
     private int y;
     private Color color;
-    // Other necessary variables and objects
 
     public Player(int x, int y, Color color) {
         this.x = x;
         this.y = y;
         this.color = color;
-        // Initialize other player-related properties and objects
     }
 
-    public void update() {
-        // Update player position or perform other logic
-        // Example: Move the player based on user input or game rules
+    public void moveUp() {
+        y--;
+    }
+
+    public void moveDown() {
+        y++;
+    }
+
+    public void moveLeft() {
+        x--;
+    }
+
+    public void moveRight() {
+        x++;
     }
 
     public void draw(Graphics g) {
-        // Draw the player on the game board
         g.setColor(color);
-        g.fillOval(x, y, 20, 20);  // Example: Draw a circular player avatar
-        // Additional drawing logic
+        g.fillRect(x, y, 20, 20);
     }
-
-    // Other methods and logic for managing the player
+    public void update() {
+        // Perform any necessary updates to the player's state
+        // For example, you could update the player's position based on its velocity or perform any other logic here
+    }
 }
