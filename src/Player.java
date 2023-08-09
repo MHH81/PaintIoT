@@ -2,8 +2,32 @@ import java.awt.*;
 
 public class Player {
     private int x;
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    // other methods
+
     private int y;
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
     private Color color;
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
 
     public Player(int x, int y, Color color) {
         this.x = x;

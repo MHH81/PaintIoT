@@ -3,6 +3,9 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class GUI extends JFrame {
+    public static void updateBoard(Board board) {
+        // Implementation to update the board
+    }
     private Board board;
     private Player player;
 
